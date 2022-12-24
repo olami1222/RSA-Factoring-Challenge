@@ -46,3 +46,15 @@ else
 
         done < "$1"
 fi
+                    if revnumber % i == 0:
+                        print("{}={}*{}".format(revnumber, revnumber // i, i))
+                        break
+                    i = i + 2
+                if i == (revnumber // 2) + 1:
+                    print("{}={}*{}".format(revnumber, revnumber, 1))
+    except (IndexError):
+        pass
+
+
+# autostart
+fc()
